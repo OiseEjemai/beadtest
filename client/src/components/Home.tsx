@@ -84,7 +84,7 @@ const Home: React.FC = () => {
           <div className='place-content-center grid'>
           <ul className="grid grid-cols-3 sm:grid-cols-6 gap-4 mb-12 justify-center">
             <li key="Send" className="flex flex-col items-center">
-              <a href="#" className="text-center text-gray-500 hover:text-gray-700 transition">
+              <a href="/send" className="text-center text-gray-500 hover:text-gray-700 transition">
                 <div className="flex justify-center items-center w-14 h-14 bg-white rounded-full shadow-md mb-2">
                   <img src="/send.svg" alt="" />
                 </div>
