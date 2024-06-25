@@ -23,7 +23,15 @@ connectDB()
 
 
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
+
+const corsOptions = {
+  origin: 'https://beadtest-ik5d.vercel.app/',
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
 
 
 app.post('/api/transactions', async (req, res) => {
